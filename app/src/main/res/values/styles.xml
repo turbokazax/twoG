@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyActionBar">
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="appBarLayoutStyle">@style/Theme.AppCompat.DayNight.DarkActionBar</item>
+    </style>
+</resources>

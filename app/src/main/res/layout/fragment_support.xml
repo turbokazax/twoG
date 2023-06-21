@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_help"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/suptitleBox"
+        android:layout_marginBottom="10dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/suptitleBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Title of your problem"
+        android:layout_above="@id/supmessageBox"
+        app:helperTextEnabled="true"
+        app:helperText="Symbols left: 30/30"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/suptitleET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:maxLength="30"
+            android:maxLines="2"
+            android:scrollbars="vertical"
+            android:singleLine="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/supmessageBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Message to support"
+        android:layout_centerInParent="true"
+        app:helperTextEnabled="true"
+        app:helperText="Symbols left: 200/200"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/supmessageET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:maxLength="200"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            android:singleLine="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:background="@color/black"
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="Send"
+        />
+</RelativeLayout>

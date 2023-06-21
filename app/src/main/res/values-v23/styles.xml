@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyActionBar">
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="navigationIcon">@drawable/ic_menu_white</item>
+        <item name="android:titleTextColor">@color/white</item>
+        <item name="appBarLayoutStyle">@style/Theme.AppCompat.DayNight.DarkActionBar</item>
+    </style>
+</resources>

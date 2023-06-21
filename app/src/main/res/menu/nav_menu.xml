@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item android:title="Social">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/nav_feed"
+                    android:icon="@drawable/ic_feed"
+                    android:title="Feed" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_profile"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_messages"
+                    android:icon="@drawable/ic_message"
+                    android:title="Messages" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Help">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="About us"
+                    android:icon="@drawable/ic_about"
+                    android:id="@+id/nav_about"/>
+                <item android:title="Contact support"
+                    android:icon="@drawable/ic_email"
+                    android:id="@+id/nav_support"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Sign out"
+                    android:icon="@drawable/ic_sign_out"
+                    android:id="@+id/nav_signout"/>
+            </group>
+        </menu>
+    </item>
+</menu>

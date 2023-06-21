@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673718790567",
+    "project_id": "twog-7ece4",
+    "storage_bucket": "twog-7ece4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673718790567:android:147cf76a5a136e1e57ee82",
+        "android_client_info": {
+          "package_name": "com.twog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673718790567-qhddlm3s914hoi1t5fghu3mgglv4vs09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5deHjXy5gFArXFbimVHS7bhl3sQg86VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673718790567-qhddlm3s914hoi1t5fghu3mgglv4vs09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

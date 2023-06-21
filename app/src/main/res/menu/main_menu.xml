@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="Filters"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_no"
+                android:title="No filters"
+                android:icon="@drawable/ic_no"/>
+            <item
+                android:id="@+id/menu_few"
+                android:title="At least one"
+                android:icon="@drawable/ic_shorttext"/>
+            <item
+                android:id="@+id/menu_many"
+                android:title="50% or more"
+                android:icon="@drawable/ic_reorder"/>
+            <item android:id="@+id/menu_guide"
+                android:icon="@drawable/ic_faq"
+                android:title="How filters work?"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_edittext_pattern"
+        android:drawableStart="@drawable/custom_sobaka_icon"
+        android:drawableLeft="@drawable/custom_sobaka_icon"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:textColor="#424141"
+        android:hint="Login"
+        android:textColorHint="#424141"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp" />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColorHint="#424141"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableLeft="@drawable/custom_lock_icon"
+        android:textColor="#424141"
+        android:drawablePadding="5dp"
+        android:background="@drawable/custom_edittext_pattern"
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dp"
+        android:hint="Password"
+        android:paddingLeft="10dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_textview_shape1"
+        android:textColor="#424141"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="Don't remember me" />
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_alignEnd="@id/editTextPassword"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/custom_thumb_pattern"
+        app:track="@drawable/custom_track_pattern"
+        android:layout_alignRight="@id/editTextPassword" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:text="@string/forgot_password"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:id="@+id/forgotPassword"
+        android:layout_marginBottom="20dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        />
+
+
+</RelativeLayout>
